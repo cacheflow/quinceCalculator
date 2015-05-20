@@ -1,0 +1,61 @@
+<head>
+  <title>QuinceCalculator</title>
+</head>
+
+<body>
+  <h1>QuinceCalculator</h1>
+
+
+<!--   {{> main}} -->
+</body>
+
+<template name="main">
+  {{#if isFirstClick}}
+     <button class="btn btn-primary" id="calculate">Calculate your Costs</button>
+   {{/if}}
+
+  {{#momentum plugin='fade'}}
+   {{#with boothOnly}}  
+     <button class="btn btn-primary" id="booth-only"> 
+      Booth only
+    </button>
+    {{/with}}
+  {{/momentum}}
+
+   
+
+  {{#momentum plugin='fade'}}
+   {{#with boothWithAd}}  
+     <button class="btn btn-primary" id="booth-with-ad"> 
+      Booth With Ad
+    </button>
+    {{/with}}
+  {{/momentum}}
+
+  {{#momentum plugin='fade'}}
+   {{#with boothWithAd}}  
+     <button class="btn btn-primary" id="booth-with-ad"> 
+      Booth With Ad
+    </button>
+    {{/with}}
+  {{/momentum}}
+
+  {{#momentum plugin='fade'}}
+   {{#with costForm}} 
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      Dropdown
+    </button>
+    <span class="caret"></span>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+  </div>
+  {{\with}}
+
+
+</template>
+
